@@ -14,10 +14,15 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+STATIC_DIR = os.path.join(BASE_DIR, 'polls.static')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
+
+# STATIC_DIR 경로 설정
+STATICFILES_DIR = [
+    STATIC_DIR,
+]
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 's5b5(-*g9qv1jisvil1(aeea%nuhm&%jd!6b@7g9)cc2gyw^+('
